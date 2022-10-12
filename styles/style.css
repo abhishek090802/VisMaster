@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 0 20px 30px 0;
+    line-height: 1.4;
+    background-color: #34495e;
+}
+
+#logo>img {
+    max-width: 170px;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, .5) !important;
+}
+
+.nav-link:hover {
+    color: rgba(255, 255, 255, .75) !important;
+}
+
+#myNavbar {
+    background-color: #34495e;
+    height: 3.5rem;
+    border-bottom: 1px solid #1abc9c;
+}
+
+.row ul {
+    margin-bottom: 0;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.pathfinding-vis {
+    margin-left: 15rem;
+}
+
+#speed {
+    margin-left: 35px;
+}
+
+#newArray {
+    height: 40px;
+    margin-top: 5px;
+}
+
+.btn-common {
+    border: 1px solid #1abc9c;
+    padding: 5px 10px;
+    margin-right: 5px;
+    font-size: 18px;
+    color: #1abc9c;
+    white-space: nowrap;
+    border-radius: 5px 0;
+    background: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+.btn-common:focus {
+    box-shadow: 0 0 0 0.15rem rgb(26 188 156 / 50%);
+    outline: 0;
+}
+
+.btn-common:hover {
+    border: 1px solid #1abc9c;
+    background-color: #1abc9c;
+    color: white;
+}
+
+.dropdown-style {
+    display: block;
+    width: 100%;
+    border-top: none;
+}
+
+.dropdown-style:hover {
+    display: block;
+    width: 100%;
+    border-top: none;
+}
+
+.flex-container {
+    margin-top: 2.4rem;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    transition: 2s all ease;
+}
+
+.flex-item {
+    background: cyan;
+    border: 1pt solid black;
+    width: 10px;
+    transition: 0.1s all ease;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+#input {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.show {
+    padding-top: 0;
+    padding-bottom: 0;
+}

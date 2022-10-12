@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/VE.png">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+
+<body class="p-3 mb-2 text-white">
+
+    <header>
+
+
+        <nav class="navbar navbar-expand-sm fixed-top" id="myNavbar">
+            <a class="navbar-brand" href="index.html" id="logo"><img src="images/VisEffect.png" alt="VisEffect"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class=" row">
+                    <ul class=" dropdown">
+                        <a class="dropdown-toggle btn-common" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Algorithms
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <button type="button" class="dropdown-style btn-common bubbleSort">Bubble
+                                Sort</button>
+                            <button type="button" class="dropdown-style btn-common selectionSort">Selection
+                                Sort</button>
+                            <button type="button" class="dropdown-style btn-common insertionSort">Insertion
+                                Sort</button>
+                            <button type="button" class="dropdown-style btn-common quickSort">Quick Sort</button>
+                            <button type="button" class="dropdown-style btn-common mergeSort">Merge Sort</button>
+                        </div>
+                    </ul>
+                    <div class="col gap-2 d-sm-flex" id="newArray">
+                        <button type="button" class="btn-common newArray">New Array</button>
+                    </div>
+
+                    <div class="col" id="input">
+                        <span id="size">Size
+                            <input id="arr_sz" type="range" min="5" max="100" step=1 value=100>
+                        </span>
+                        <span id="speed">Speed
+                            <input id="speed_input" type="range" min="20" max="300" stepDown=10 value=60>
+                        </span>
+                    </div>
+                </div>
+
+                <a class="btn-common pathfinding-vis" href="index.html">Pathfinding
+                    Visualizer</a>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <div id="bars" class="flex-container"></div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="scripts/sortingScripts/sorting.js"></script>
+    <script src="scripts/sortingScripts/bubble.js"></script>
+    <script src="scripts/sortingScripts/insertion.js"></script>
+    <script src="scripts/sortingScripts/merge.js"></script>
+    <script src="scripts/sortingScripts/quick.js"></script>
+    <script src="scripts/sortingScripts/selection.js"></script>
+</body>
+
+</html>
